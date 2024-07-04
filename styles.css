@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --main-bg-color:  hsl(0, 0%, 8%);
+    --card-bg-color:  hsl(0, 0%, 12%);
+    --link-color: #333333;
+    --accent-color: hsl(75, 94%, 57%);
+    --main-text-color: hsl(0, 0%, 100%);
+    --big-font: 24px;
+    --medium-font: 20px;
+    --normal-font: 14px;
+    --small-font: 12px;
+}
+
+*, 
+*::before, 
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}   
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper__container {
+    max-width: 384px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 2.5rem; 
+    background-color: var(--card-bg-color);
+}
+
+.profile {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile__image {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+}
+
+.profile__name, 
+.profile__bio {
+    color: var(--main-text-color);
+}
+
+.profile__name {
+    font-size: var(--big-font);
+    font-weight: 700;
+    margin-bottom: 0.5rem; 
+}
+
+.profile__location{
+    font-size: var(--normal-font); 
+    font-weight: 600;
+    color: var(--accent-color);
+    padding-bottom: 1.75rem; 
+}
+
+.profile__bio {
+    font-size: var(--normal-font);
+    padding-bottom: 1.25rem; 
+}
+
+.social-links__list {
+    display: grid;
+    gap: 1.063rem;
+    list-style: none;
+}
+
+.social-links__item {
+    display: block;
+    padding: 15px 0;
+    font-size: var(--normal-font);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--link-color);
+    color: var(--main-text-color);
+}
+
+.social-links__item:hover {
+    
+    color: var(--main-bg-color);
+    background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper__container {
+        max-width: 327px;
+        padding: 1.25rem;
+    }
+}
