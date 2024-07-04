@@ -42,9 +42,6 @@ body {
 }
 
 .profile {
-    display: grid;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
@@ -101,6 +98,15 @@ body {
     color: var(--main-bg-color);
     background-color: var(--accent-color);
 }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
 
 @media screen and (max-width: 768px) {
     .wrapper__container {
